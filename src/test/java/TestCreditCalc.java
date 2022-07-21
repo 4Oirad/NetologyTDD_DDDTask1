@@ -16,7 +16,7 @@ public class TestCreditCalc {
 
         CreditCalc calc = new CreditCalc(creditSum, creditTime, creditRate);
 
-        final double actual = calc.getMonthleyPayment();
+        final double actual = calc.getMonthlyPayment();
         final double r = creditRate / 1200;
         final double expected = creditSum * r * Math.pow(1 + r, creditTime) / (Math.pow(1 + r, creditTime) - 1);
 
